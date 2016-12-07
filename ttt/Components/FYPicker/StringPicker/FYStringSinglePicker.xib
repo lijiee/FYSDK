@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uBd-ln-zWh" customClass="FYStringPicker">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="199"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMP-jh-sGK" userLabel="helper">
+                    <rect key="frame" x="53" y="80" width="245" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Kx2-39-rm8"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FkK-NP-161">
+                    <rect key="frame" x="53" y="0.0" width="246" height="199"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="F8W-Ds-9tL">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="80" maxX="0.0" maxY="80"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNb-Kn-XK7" userLabel="value1_top_line">
+                    <rect key="frame" x="53" y="80" width="246" height="1"/>
+                    <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="mIQ-YX-FWY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d86-TV-uyU" userLabel="value1_bottom_line">
+                    <rect key="frame" x="53" y="119" width="246" height="1"/>
+                    <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3wX-td-IiX"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3wX-td-IiX"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OMP-jh-sGK" firstAttribute="leading" secondItem="FkK-NP-161" secondAttribute="leading" id="0es-2E-hGC"/>
+                <constraint firstItem="FkK-NP-161" firstAttribute="centerX" secondItem="uBd-ln-zWh" secondAttribute="centerX" id="0sa-Dy-gxE"/>
+                <constraint firstAttribute="bottom" secondItem="FkK-NP-161" secondAttribute="bottom" id="1NP-tK-6Dp"/>
+                <constraint firstItem="YNb-Kn-XK7" firstAttribute="trailing" secondItem="FkK-NP-161" secondAttribute="trailing" id="A9x-Hp-TP7"/>
+                <constraint firstItem="FkK-NP-161" firstAttribute="top" secondItem="uBd-ln-zWh" secondAttribute="top" id="CjG-Ap-c9P"/>
+                <constraint firstItem="d86-TV-uyU" firstAttribute="leading" secondItem="YNb-Kn-XK7" secondAttribute="leading" id="E3y-pK-hAx"/>
+                <constraint firstItem="d86-TV-uyU" firstAttribute="bottom" secondItem="OMP-jh-sGK" secondAttribute="bottom" id="H6C-vV-dcd"/>
+                <constraint firstItem="d86-TV-uyU" firstAttribute="height" secondItem="YNb-Kn-XK7" secondAttribute="height" id="KE5-Oc-2ZP"/>
+                <constraint firstItem="FkK-NP-161" firstAttribute="width" secondItem="uBd-ln-zWh" secondAttribute="width" multiplier="0.7:1" id="MvX-xp-XlV"/>
+                <constraint firstItem="YNb-Kn-XK7" firstAttribute="leading" secondItem="FkK-NP-161" secondAttribute="leading" id="TlA-Hw-Co1"/>
+                <constraint firstItem="OMP-jh-sGK" firstAttribute="centerY" secondItem="uBd-ln-zWh" secondAttribute="centerY" id="UjC-42-fnS"/>
+                <constraint firstItem="d86-TV-uyU" firstAttribute="trailing" secondItem="YNb-Kn-XK7" secondAttribute="trailing" id="cBx-si-CZl"/>
+                <constraint firstItem="YNb-Kn-XK7" firstAttribute="top" secondItem="OMP-jh-sGK" secondAttribute="top" id="nla-8U-z0f"/>
+                <constraint firstItem="OMP-jh-sGK" firstAttribute="centerX" secondItem="uBd-ln-zWh" secondAttribute="centerX" id="zLv-Rv-id5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="itemNormalHeight" destination="Kx2-39-rm8" id="B04-wD-2eC"/>
+                <outlet property="value1CollectionView" destination="FkK-NP-161" id="wFb-6c-psY"/>
+                <outlet property="value1CollectionViewWidth" destination="MvX-xp-XlV" id="7Zg-lJ-OCS"/>
+                <outletCollection property="divideLines" destination="YNb-Kn-XK7" id="2sv-Pg-GxY"/>
+                <outletCollection property="divideLines" destination="d86-TV-uyU" id="fWH-Wq-8oL"/>
+            </connections>
+            <point key="canvasLocation" x="497.5" y="356.5"/>
+        </view>
+    </objects>
+</document>
